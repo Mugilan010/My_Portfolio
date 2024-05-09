@@ -19,7 +19,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background-color: transparent;
+    background-color: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,41 +98,32 @@ body{
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
+    margin-top: 20px;
 }
 
 .home-content p{
     position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-}
-
-
-.home-content .btn-box{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
-.home-content .btn-box::before{
-   z-index: 2;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: left;
+    color: rgba(237, 237, 237, 0.4);
 }
 
 .btn-box a{
     position: relative;
+    top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 80px;
     background:transparent;;
     border: 2px solid #00abf0;
-    border-radius: 8px;
+    border-radius: 50px;
     font-size: 19px;
+    font-weight: 900;
     color: #00abf0;
     text-decoration: none;
-    font-weight: 600;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
@@ -160,9 +151,48 @@ body{
     width: 100%;
 }
 
+
+/* This is skills section stylings */
+
+.skills-sec{
+    position: absolute;
+    width:100%;
+    top: 700px;
+    padding-right: 252.666px;
+    text-align: center;
+   
+}
+
+.skills-h1{
+    font-size: 40px;
+    color: #edededc0;
+}
+
+.skills-p{
+    align-items: center;
+    color: rgba(0, 172, 240, 0.532);
+}
+
+.skills-container{
+    display: flex;
+}
+
+.skillset-box{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    border: 1px solid #00abf0;
+    border-radius: 10px;
+    margin: 50px 20px;
+    box-shadow:0 0 10px #00acf03f;
+   
+}
+
+
+
 .home-sci{
     position: absolute;
-    bottom: 40px;
+    bottom:-100%;
     width: 250px;
     display: flex;
     justify-content: space-between;
