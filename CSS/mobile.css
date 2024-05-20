@@ -13,7 +13,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* overflow-y: hidden; */
+    overflow-x: hidden;
     
 
     
@@ -88,8 +88,8 @@ li a:hover{
     color: #ededed;
     font-size: 1.87em;
     float: right;
-    margin-top: 1.25em;
-    margin-right: 1.87em;
+    margin-top: 0.4em;
+    margin-right: 1em;
 }
 
 #check-1{
@@ -110,7 +110,8 @@ li a:hover{
     color: #ededed;
     font-size: 1.87em;
     position: absolute;
-    right: 1.87em;
+    right: 1em;
+    top: 1em;
     display: none;
     
     
@@ -703,7 +704,7 @@ li a:hover{
     position: absolute;
     top: 425em;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 0px;
     display: flex;
     -webkit-box-pack: center;
@@ -734,7 +735,7 @@ li a:hover{
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     -webkit-box-pack: center;
     justify-content: center;
 }
