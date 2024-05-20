@@ -97,7 +97,7 @@ li a:hover{
     color:rgba(146, 146, 218, 0.578);
 }
 
-.checkbtn{
+.checkbtn-1{
     color: #ededed;
     font-size: 30px;
     float: right;
@@ -105,12 +105,32 @@ li a:hover{
     margin-right: 30px;
 }
 
-#check{
+#check-1{
     display: none;
 }
 
-#check:checked ~.nav-ul{
+#check-1:checked ~.nav-ul{
     top:0;
+    
+}
+
+#check-1:checked ~.checkbtn-1{
+    display: none;
+    
+}
+
+.checkbtn-2{
+    color: #ededed;
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    display: none;
+    
+    
+}
+
+#check-1:checked ~.checkbtn-2{
+    display: block;
     
 }
 
