@@ -26,35 +26,22 @@ body{
     top: 0;
     left: 0;
     width: 100vw;
-    z-index: 100;
+    z-index: 10;
     background-color: #f8eeee;
 }
 
 .logo{
     display: inline-block;
-    font-size: 25px;
-    padding: 20px 30px;
+    font-size: 1.56em;
+    padding: 1.25em 1.87em;
     font-weight: 900;
     margin-bottom: 0;
     
 }
 
-.logo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right:0;
-    width: 50%;
-    height: 100%;
-    margin-right: 260px;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-duration: 5s;
-}
-
 .navbar{
-    background:#081b29;
-    height: 100px;
+    background:#01101b;
+    height: 6.25em;
     width: 100vw;
     padding: 0;
     display: flex;
@@ -66,12 +53,12 @@ body{
 
 .nav-ul{
     position: relative;
-    padding: 40px;
+    padding: 2.5em;
     float: right;
     width: 100vw;
-    top: -500px;
+    top: -31.25em;
     transition: all .9s;
-    background-color: #081b29;
+    background-color: #000508;
     z-index: -1;
     
     
@@ -80,7 +67,7 @@ body{
 .nav-ul li{
     display: block;
     text-align:center;
-    margin-bottom: 15px;
+    margin-bottom: 0.93em;
 }
 
 .nav-ul li:hover{
@@ -89,7 +76,7 @@ body{
 
 li a{
     color: #ededed;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 900;
 }
 
@@ -99,10 +86,10 @@ li a:hover{
 
 .checkbtn-1{
     color: #ededed;
-    font-size: 30px;
+    font-size: 1.87em;
     float: right;
-    margin-top: 20px;
-    margin-right: 30px;
+    margin-top: 1.25em;
+    margin-right: 1.87em;
 }
 
 #check-1{
@@ -121,9 +108,9 @@ li a:hover{
 
 .checkbtn-2{
     color: #ededed;
-    font-size: 30px;
+    font-size: 1.87em;
     position: absolute;
-    right: 30px;
+    right: 1.87em;
     display: none;
     
     
@@ -138,7 +125,7 @@ li a:hover{
 
 .home-content{
     position: relative;
-    top: 200px;
+    top: 12.5em;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +136,7 @@ li a:hover{
 
 .home-content h1{
     margin: 0 28%;
-    font-size: 30px;
+    font-size: 1.87em;
     font-weight: 900;
 }
 
@@ -169,33 +156,33 @@ li a:hover{
 
 .home-content h3{
     position: relative;
-    font-size: 15px;
+    font-size: 0.93em;
     font-weight: 700;
     color: #00abf0;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 .home-content p{
     position: relative;
-    font-size: 20px;
-    margin: 20px 10px;
+    font-size: 1.25em;
+    margin: 1.25em 0.62em;
     line-height: 1.5;
     color: rgba(237, 237, 237, 0.4);
 }
 
 .btn-box a{
     position: relative;
-    top: 10px;
+    top: 0.62em;
     left:0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
+    width: 12.5em;
+    height: 3.12em;
     background:transparent;;
     border: 2px solid #00abf0;
-    border-radius: 50px;
-    font-size: 12px;
+    border-radius: 3.12em;
+    font-size: 0.75em;
     font-weight: 900;
     color: #00abf0;
     text-decoration: none;
@@ -231,17 +218,17 @@ li a:hover{
 .skills-sec{
     position: relative;
     width:100%;
-    top: 330px;
+    top: 20.62em;
     left: 0;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 3.12em;
     background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), 
                 linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
    
 }
 
 .skills-h1{
-    font-size: 25px;
+    font-size: 1.56em;
     color: #ededed;
     font-weight: 800;
 
@@ -250,30 +237,30 @@ li a:hover{
 .skills-p{
     align-items: center;
     color: rgba(0, 172, 240, 0.532);
-    margin: 30px 0;
+    margin: 1.87em 0;
 }
 
 .skills-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 1.87em;
 }
 
 .skillset-box{
     position: relative;
-    width: 300px;
-    height: 280px;
+    width: 18.75em;
+    height: 17.5em;
     border: 1px solid #00abf0;
-    border-radius: 10px;
-    box-shadow:0 0 10px #00acf03f;
+    border-radius: 0.62em;
+    box-shadow:0 0 0.62em #00acf03f;
    
 }
 
 .skillset-h2{
-    font-size: 20px;
+    font-size: 1.25em;
     color: #edededc0;
-    padding: 20px;
+    padding: 1.25em;
     font-weight: 700;
 }
 
@@ -282,20 +269,20 @@ li a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    padding: 18px 30px;
+    gap: 0.75em;
+    padding: 1.13em 1.87em;
 }
 
 .skills{
     border: 1px solid #ededed66;
     color: #ededed9d;
-    font-size: 10px;
-    min-width: 100px;
-    border-radius: 10px;
+    font-size: 0.62em;
+    min-width: 6.25em;
+    border-radius: 0.62em;
     display: inline-flex;
     gap: 5px;
     align-items: center;
-    padding: 10px 15px;
+    padding: 0.62em 0.93em;
     
     
 }
@@ -310,7 +297,7 @@ li a:hover{
     left: 0;
     width: 100%;
     height: auto;
-    top: 1800px;
+    top: 112.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -320,13 +307,13 @@ li a:hover{
 }
 
 .project-container h1{
-    margin-top: 50px ;
-    font-size: 25px;
+    margin-top: 3.12em ;
+    font-size: 1.56em;
     font-weight: 800;
 }
 
 .project-container p{
-    font-size: 15px;
+    font-size: 0.93em;
     padding: 2% 5%;
     color: #edededc0;
     line-height: 1.5;
@@ -339,31 +326,31 @@ li a:hover{
     height: auto;
     background-color: rgb(23, 23, 33);
     cursor: pointer;
-    border-radius: 10px;
-    padding: 26px 20px;
+    border-radius: 0.62em;
+    padding: 1.62em 1.25em;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0.88em;
     position: relative;
     text-align: left;
     bottom:0 ;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     transition: all .5s ease-in-out 0s;
 }
 
 .projects:hover{
     position: relative;
-    bottom:10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 50px 4px;
+    bottom:0.62em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 3.12em 4px;
    
 }
 
 .pro-img{
     width: 100%;
-    height: 180px;
+    height: 11.25em;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 16px 2px;
+    border-radius: 0.62em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1em 2px;
 }
 
 .project-tools{
@@ -372,17 +359,17 @@ li a:hover{
     -webkit-box-align: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
+    gap: 0.5em;
+    margin-top: 0.25em;
 }
 
 .tool{
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 400;
     color: rgb(133, 76, 230);
     background-color: rgba(133, 76, 230, 0.082);
-    padding: 2px 8px;
-    border-radius: 10px;
+    padding: 0.12em 0.5em;
+    border-radius: 0.62em;
 }
 
 .project-details{
@@ -395,7 +382,7 @@ li a:hover{
 }
 
 .pro-name{
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 600;
     color: rgb(177, 178, 179);
     display: -webkit-box;
@@ -407,7 +394,7 @@ li a:hover{
 }
 
 .pro-year{
-    font-size: 12px;
+    font-size: 0.75em;
     margin-left: 2px;
     font-weight: 400;
     color: rgba(177, 178, 179, 0.5);
@@ -429,7 +416,7 @@ li a:hover{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 0.62em;
 }
 
 /* Education section */
@@ -439,7 +426,7 @@ li a:hover{
     position: relative;
     left: 0;
     width: 100%;
-    top: 3300px;
+    top: 206.25em;
     text-align: center;
     display: flex;
     -webkit-box-pack: justify;
@@ -448,46 +435,46 @@ li a:hover{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
-    padding: 40px 0px;
-    gap: 12px;
+    max-width: 84.37em;
+    padding: 2.5em 0px;
+    gap: 0.75em;
     background-image: linear-gradient(141.27deg, rgba(10, 3, 43, 0.352) 50%, rgba(20, 19, 21, 0.868) 100%);
 }
 
 .Edu-title{
-    font-size: 42px;
+    font-size: 2.63em;
     text-align: center;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 1.25em;
     color: rgb(242, 243, 244);
 }
 
 .Edu-p{
-    font-size: 15px;
+    font-size: 0.93em;
     text-align: center;
-    max-width: 600px;
+    max-width: 37.5em;
     color: rgb(177, 178, 179);
 
 }
 
 .Edu-blocks{
     width: 100%;
-    max-width: 1000px;
-    height: 900px;
-    margin-top: 10px;
+    max-width: 62.5em;
+    height: 56.25em;
+    margin-top: 0.62em;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .Edu-ul{
     display: flex;
     flex-direction: column;
-    padding: 6px 16px;
+    padding: 0.38em 1em;
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
@@ -496,7 +483,7 @@ li a:hover{
     list-style: none;
     display: flex;
     position: relative;
-    min-height: 70px;
+    min-height: 4.38em;
 }
 
 .css-68bxna {
@@ -508,21 +495,21 @@ li a:hover{
     letter-spacing: 0.00938em;
     flex: 1 1 0%;
     text-align: left;
-    padding: 12px 16px;
+    padding: 0.75em 1em;
 }
 
 .fWHUzm {
     width: 80vw;
-    border-radius: 10px;
+    border-radius: 0.62em;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
+    padding: 0.75em 1em;
     -webkit-box-pack: justify;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75em;
     transition: all 0.3s ease-in-out 0s;
     border: 0.1px solid rgb(133, 76, 230);
 }
@@ -530,7 +517,7 @@ li a:hover{
 .dDOFCY {
     width: 100%;
     display: flex;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .DTxDp {
@@ -540,35 +527,35 @@ li a:hover{
 }
 
 .PiGNh {
-    font-size: 18px;
+    font-size: 1.13em;
     font-weight: 600;
     color: rgba(242, 243, 244, 0.6);
 }
 
 .jPjfWV {
-    font-size: 14px;
+    font-size: 0.88em;
     font-weight: 500;
     color: rgba(177, 178, 179, 0.6);
 }
 
 .knDEXF {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 400;
     color: rgba(177, 178, 179, 0.5);
 }
 
 .jBEdPw {
-    font-size: 14px;
+    font-size: 0.88em;
     font-weight: 500;
     color: rgba(177, 178, 179, 0.6);
 }
 
 .jdCOG {
     width: 100%;
-    font-size: 15px;
+    font-size: 0.93em;
     font-weight: 400;
     color: rgba(242, 243, 244, 0.6);
-    margin-bottom: 10px;
+    margin-bottom: 0.62em;
 }
 
 .gFUfkN {
@@ -621,7 +608,7 @@ li a:hover{
 
 .iFpXvo {
     position: absolute;
-    top: 6000px;
+    top: 375em;
     left: 0;
     display: flex;
     background-image: linear-gradient(180deg, #081b29, #342424);
@@ -631,23 +618,23 @@ li a:hover{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
-    padding: 0px 0px 80px;
-    gap: 12px;
+    max-width: 84.38em;
+    padding: 0px 0px 5em;
+    gap: 0.75em;
 }
 
 .erSJUw {
-    font-size: 42px;
+    font-size: 2.63em;
     text-align: center;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 1.25em;
     color: rgb(242, 243, 244);
 }
 
 .bLACN {
-    font-size: 15px;
+    font-size: 0.93em;
     text-align: center;
-    max-width: 600px;
+    max-width: 37.5em;
     color: rgb(177, 178, 179);
 }
 
@@ -658,16 +645,16 @@ li a:hover{
     display: flex;
     flex-direction: column;
     background-color: rgb(23, 23, 33);
-    padding: 32px;
-    border-radius: 16px;
+    padding: 2em;
+    border-radius: 1em;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    margin-top: 28px;
-    gap: 12px;
+    margin-top: 1.75em;
+    gap: 0.75em;
 }
 
 .btKxwf {
-    font-size: 24px;
-    margin-bottom: 6px;
+    font-size: 1.5em;
+    margin-bottom: 0.38em;
     font-weight: 600;
     color: rgb(242, 243, 244);
 }
@@ -677,10 +664,10 @@ li a:hover{
     background-color: transparent;
     border: 1px solid rgb(177, 178, 179);
     outline: none;
-    font-size: 18px;
+    font-size: 1.13em;
     color: rgb(242, 243, 244);
-    border-radius: 12px;
-    padding: 12px 16px;
+    border-radius: 0.75em;
+    padding: 0.75em 1em;
 }
 
 .bEYzNP {
@@ -688,10 +675,10 @@ li a:hover{
     background-color: transparent;
     border: 1px solid rgb(177, 178, 179);
     outline: none;
-    font-size: 18px;
+    font-size: 1.13em;
     color: rgb(242, 243, 244);
-    border-radius: 12px;
-    padding: 12px 16px;
+    border-radius: 0.75em;
+    padding: 0.75em 1em;
 }
 
 .bUEdWX {
@@ -699,12 +686,12 @@ li a:hover{
     text-decoration: none;
     text-align: center;
     background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
-    padding: 13px 16px;
+    padding: 0.82em 1em;
     margin-top: 2px;
-    border-radius: 12px;
+    border-radius: 0.75em;
     border: none;
     color: rgb(242, 243, 244);
-    font-size: 18px;
+    font-size: 1.13em;
     font-weight: 600;
     cursor: pointer;
 }
@@ -714,7 +701,7 @@ li a:hover{
 
 .gLYxTo {
     position: absolute;
-    top: 6800px;
+    top: 425em;
     left: 0;
     width: 100%;
     padding: 2rem 0px;
@@ -725,10 +712,10 @@ li a:hover{
 
 .cxnhxt {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75em;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0.88em;
     -webkit-box-align: center;
     align-items: center;
     padding: 1rem;
@@ -737,13 +724,13 @@ li a:hover{
 
 .epBkAw {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
     color: rgb(133, 76, 230);
 }
 
 .klxVPD {
     width: 100%;
-    max-width: 800px;
+    max-width: 50em;
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -766,9 +753,10 @@ li a:hover{
 }
 
 .home-sci{
-    width: 250px;
+    width: 17em;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
 .home-sci a{
@@ -776,13 +764,13 @@ li a:hover{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 1.25em;
     background: transparent;
     border: 2px solid #00abf0;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #00abf0;
     text-decoration: none;
     overflow: hidden;
@@ -845,14 +833,14 @@ li a:hover{
 }
 
 .ARcNH {
-    max-width: 800px;
+    max-width: 50em;
     width: 100%;
-    border-radius: 16px;
-    margin: 50px 12px;
+    border-radius: 1em;
+    margin: 3.13em 0.75em;
     height: min-content;
     background-color: rgb(23, 23, 33);
     color: rgb(242, 243, 244);
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -873,21 +861,21 @@ li a:hover{
 .idhUWA {
     width: 100%;
     object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
+    border-radius: 0.75em;
+    margin-top: 1.87em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0.62em 0px;
 }
 
 .dUldRZ {
-    font-size: 28px;
+    font-size: 1.75em;
     font-weight: 600;
     color: rgb(242, 243, 244);
-    margin: 8px 6px 0px;
+    margin: 0.5em 0.38em 0px;
 }
 
 .iGKVuq {
-    font-size: 16px;
-    margin: 2px 6px;
+    font-size: 1em;
+    margin: 0.13em 0.38em;
     font-weight: 400;
     color: rgb(177, 178, 179);
 }
@@ -895,42 +883,42 @@ li a:hover{
 .bGUtes {
     display: flex;
     flex-wrap: wrap;
-    margin: 8px 0px;
+    margin: 0.5em 0em;
 }
 
 .dgnxrK {
-    font-size: 14px;
+    font-size: 0.88em;
     font-weight: 400;
     color: rgb(133, 76, 230);
-    margin: 4px;
-    padding: 4px 8px;
-    border-radius: 8px;
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
     background-color: rgba(133, 76, 230, 0.125);
 }
 
 .bJALem {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     color: rgb(242, 243, 244);
-    margin: 8px 6px;
+    margin: 0.5em 0.38em;
 }
 
 .bcEbCj {
     display: flex;
     -webkit-box-pack: end;
     justify-content: center;
-    margin: 12px 0px;
-    gap: 12px;
+    margin: 0.75em 0px;
+    gap: 0.75em;
 }
 
 .GZmoK {
     
     width:45%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
-    padding: 12px 16px;
-    border-radius: 8px;
+    padding: 0.75em 1em;
+    border-radius: 0.5em;
     background-color: rgb(28, 30, 39);
     color: rgb(177, 178, 179);
     cursor: pointer;
@@ -941,11 +929,11 @@ li a:hover{
 .hsrYZy {
     width: 45%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     color: rgb(242, 243, 244);
-    padding: 12px 16px;
-    border-radius: 8px;
+    padding: 0.75em 1em;
+    border-radius: 0.5em;
     background-color: rgb(133, 76, 230);
     cursor: pointer;
     text-decoration: none;
