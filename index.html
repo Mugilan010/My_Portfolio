@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtisticAlgorithms</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width:600px)">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/4ac86934fa.js" crossorigin="anonymous"></script>
+
     
 </head>
 <body>
     
     <header class="header" >
-        <a href="#" class="logo">Mugilan.</a>
-
+        
         <nav class="navbar">
-            <a href="#">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Education">Education</a>
-            <a href="#Contact">Contact</a>
+            <p href="" class="logo">Mugilan.</p>
+            <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+            <ul class="nav-ul">
+                <li><a href="#">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            
         </nav>
     </header>
 
     <section class="home">
+
+        <!-- About section -->
+
         <div class="home-content" id="About" >
             <h1>Hi, I'm Mugilan V</h1>
             <h3>Fullstack Developer</h3>
@@ -37,6 +51,8 @@
                         
                     </div>
         </div>
+
+        <!-- Skills section -->
 
         <div class="skills-sec" id="Skills">
             <h1 class="skills-h1">Skills</h1>
@@ -131,33 +147,92 @@
             
         </div>
         
+        <!-- Projects section -->
+
         <div class="project-container" id="Projects">
             <h1>Projects</h1>
             <p>I have worked on a wide range of projects. From websites to web apps. Here are some of my projects.</p>
             <div class="project-block">
-                <div class="projects">
-                    <img class="pro-img" src="Images/product-landing-page.png" alt="">
+                <div class="projects" data-toggle="modal" data-target="#myModal-1">
+                    <img class="pro-img" src="./Images/netflix-clone.png" alt="">
                     <div class="project-tools">
                         <span class="tool">HTML</span>
                         <span class="tool">CSS</span>
+                        <span class="tool">REACT</span>
                     </div>
                     <div class="project-details">
-                        <div class="pro-name">Product_landing_page</div>
-                        <div class="pro-year">2022</div>
+                        <div class="pro-name">Netflix-clone</div>
+                        <div class="pro-year">2024</div>
                         <div class="pro-desc">
-                            This is a responsive Product_landing_page for my father's shop I created as a beginner frontend developer.
-                             This project features a visually appealing grid layout for product showcase, 
-                             complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
-                             The project's responsiveness guarantees it looks great on various devices, 
-                             and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
-                             grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
-                             You can check out the live project here
+                            Our Netflix-clone project utilizes HTML, CSS, and React to create a dynamic and 
+                            user-friendly streaming platform, With a responsive design and seamless navigation.
+                            users can enjoy watching a trailer with smooth playback functionality. 
                         </div>
                     </div>
                     <div class="desc-exp"></div>
                 </div>
-                <div class="projects">
-                    <img class="pro-img" src="https://user-images.githubusercontent.com/120004894/267870549-dd299367-f8f4-42d9-b0ca-64a279ddb800.png" alt="">
+                <div class="projects" data-toggle="modal" data-target="#myModal-2">
+                    <img class="pro-img" src="./Images/Flaskmarket.png" alt="">
+                    <div class="project-tools">
+                        <span class="tool">HTML</span>
+                        <span class="tool">CSS</span>
+                        <span class="tool">Python</span>
+                        <span class="tool">Flask</span>
+                        <span class="tool">Sqlite</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="pro-name">Flaskmarket-WebApp</div>
+                        <div class="pro-year">2024</div>
+                        <div class="pro-desc">
+                            This Flask web application includes essential user functionalities such as registration
+                            and login, allowing users to securely buy and sell items. It ensures security by saving
+                            passwords in the database as encrypted text. This is achieved using hashing algorithms,
+                            such as bcript, to encrypt passwords before storing them, provinding robust protection
+                            against unauthorized access. 
+                        </div>
+                    </div>
+                    <div class="desc-exp"></div>
+                </div>
+                <div class="projects" data-toggle="modal" data-target="#myModal-3">
+                    <img class="pro-img" src="./Images/note-keeper.png" alt="">
+                    <div class="project-tools">
+                        <span class="tool">HTML</span>
+                        <span class="tool">CSS</span>
+                        <span class="tool">JavaScript</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="pro-name">Note-Keeper</div>
+                        <div class="pro-year">2023</div>
+                        <div class="pro-desc">
+                            The Note Keeper project leverages HTML, CSS, and JavaScript to create an intuitive
+                            web application for managing and organizing notes. Users can easily create, edit,
+                            and delete notes, with a clear and user-friendly interface designed for seamless
+                            interaction and efficient organization.
+                        </div>
+                    </div>
+                    <div class="desc-exp"></div>
+                </div>
+                <div class="projects" data-toggle="modal" data-target="#myModal-4">
+                    <img class="pro-img" src="./Images/Meme_generator.png" alt="">
+                    <div class="project-tools">
+                        <span class="tool">HTML</span>
+                        <span class="tool">CSS</span>
+                        <span class="tool">REACT</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="pro-name">Meme_generator</div>
+                        <div class="pro-year">2023</div>
+                        <div class="pro-desc">
+                            A simple and fun meme generator build with React that fetches random images from
+                            an API. Users can add their own text to create and sharp unique memes. The application
+                            uses React hooks for state management and fetches images from an external API to ensure
+                            fresh diverse content.
+                        </div>
+                    </div>
+                    <div class="desc-exp"></div>
+                </div>
+                <div class="projects" data-toggle="modal" data-target="#myModal-5">
+                    <img class="pro-img" src="./Images/newsgrid.png" alt="">
                     <div class="project-tools">
                         <span class="tool">HTML</span>
                         <span class="tool">CSS</span>
@@ -166,7 +241,7 @@
                         <div class="pro-name">NewsGrid</div>
                         <div class="pro-year">2023</div>
                         <div class="pro-desc">
-                            NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
+                             NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
                              This project features a visually appealing grid layout for news articles, 
                              complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
                              The project's responsiveness guarantees it looks great on various devices, 
@@ -177,90 +252,21 @@
                     </div>
                     <div class="desc-exp"></div>
                 </div>
-                <div class="projects">
-                    <img class="pro-img" src="Images/Meme_generator.png" alt="">
+                <div class="projects" data-toggle="modal" data-target="#myModal-6">
+                    <img class="pro-img" src="./Images/product-landing-page.png" alt="">
                     <div class="project-tools">
                         <span class="tool">HTML</span>
                         <span class="tool">CSS</span>
-                        <span class="tool">REACT</span>
                     </div>
                     <div class="project-details">
-                        <div class="pro-name">Meme_generator</div>
-                        <div class="pro-year">2023</div>
+                        <div class="pro-name">Product_landing_page</div>
+                        <div class="pro-year">2022</div>
                         <div class="pro-desc">
-                            NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
-                             This project features a visually appealing grid layout for news articles, 
-                             complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
-                             The project's responsiveness guarantees it looks great on various devices, 
-                             and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
-                             grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
-                             You can check out the live project here
-                        </div>
-                    </div>
-                    <div class="desc-exp"></div>
-                </div>
-                <div class="projects">
-                    <img class="pro-img" src="Images/Meme_generator.png" alt="">
-                    <div class="project-tools">
-                        <span class="tool">HTML</span>
-                        <span class="tool">CSS</span>
-                        <span class="tool">REACT</span>
-                    </div>
-                    <div class="project-details">
-                        <div class="pro-name">Meme_generator</div>
-                        <div class="pro-year">2023</div>
-                        <div class="pro-desc">
-                            NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
-                             This project features a visually appealing grid layout for news articles, 
-                             complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
-                             The project's responsiveness guarantees it looks great on various devices, 
-                             and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
-                             grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
-                             You can check out the live project here
-                        </div>
-                    </div>
-                    <div class="desc-exp"></div>
-                </div>
-                <div class="projects">
-                    <img class="pro-img" src="Images/Meme_generator.png" alt="">
-                    <div class="project-tools">
-                        <span class="tool">HTML</span>
-                        <span class="tool">CSS</span>
-                        <span class="tool">REACT</span>
-                    </div>
-                    <div class="project-details">
-                        <div class="pro-name">Meme_generator</div>
-                        <div class="pro-year">2023</div>
-                        <div class="pro-desc">
-                            NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
-                             This project features a visually appealing grid layout for news articles, 
-                             complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
-                             The project's responsiveness guarantees it looks great on various devices, 
-                             and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
-                             grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
-                             You can check out the live project here
-                        </div>
-                    </div>
-                    <div class="desc-exp"></div>
-                </div>
-                <div class="projects">
-                    <img class="pro-img" src="Images/Meme_generator.png" alt="">
-                    <div class="project-tools">
-                        <span class="tool">HTML</span>
-                        <span class="tool">CSS</span>
-                        <span class="tool">REACT</span>
-                    </div>
-                    <div class="project-details">
-                        <div class="pro-name">Meme_generator</div>
-                        <div class="pro-year">2023</div>
-                        <div class="pro-desc">
-                            NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
-                             This project features a visually appealing grid layout for news articles, 
-                             complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
-                             The project's responsiveness guarantees it looks great on various devices, 
-                             and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
-                             grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
-                             You can check out the live project here
+                             A sleek and modern product landing page crafted using HTML and CSS. The page is 
+                             designed to showcase products effectively, ensuring a seamless user experience
+                             across all devices.Well-organized and semantic HTML5 code for easy readability
+                             and maintainability.Custom CSS for visually appealing design, including smooth
+                             animations, hover effects, and consistent typography.
                         </div>
                     </div>
                     <div class="desc-exp"></div>
@@ -268,6 +274,8 @@
             </div>
 
         </div>
+
+        <!-- Education section -->
 
         <div class="Edu-container" id="Education">
             <div class="Edu-title">Education</div>
@@ -285,9 +293,6 @@
                                         <div class="jPjfWV">Web Development along with React.js</div>
                                         <div class="knDEXF">2023</div>
                                     </div>
-                                </div>
-                                <div class="jBEdPw">
-                                    <b>Grade:</b> 90%
                                 </div>
                                 <div class="jdCOG">
                                     <span class="gFUfkN">
@@ -376,6 +381,8 @@
             </form>
         </div>
 
+        <!-- Footer section -->
+
         <div class="gLYxTo">
             <footer class="cxnhxt">
                 <h1 class="epBkAw">Mugilan V</h1>
@@ -387,19 +394,218 @@
                     <a href="#Contact" class="dWbgwL">Contact</a>
                 </nav>
                 <div class="home-sci">
-                    <a href="#" ><i class="bx bxl-facebook"></i></a>
-                    <a href="#" ><i class="bx bxl-twitter"></i></a>
-                    <a href="#" ><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mugilan010_official/" ><i class="bx bxl-instagram"></i></a>
+                    <a href="https://x.com/mugilan010" ><i class="bx bxl-twitter"></i></a>
+                    <a href="https://wa.me/+916380396369" ><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/mugilan-v-8273a9282" ><i class="bx bxl-linkedin"></i></a>
                     <a href="https://github.com/Mugilan010" ><i class='bx bxl-github'></i></i></a>
                 </div>
                 <p class="gubhrO">Keep learning . . . Be alive.</p>
             </footer>
         </div>
-
-        <footer>
-            
-        </footer>
     </section>
+
+    <!-- Modal section -->
+
+    <div class="css-8ndowl modal fade" id="myModal-1"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/netflix-clone.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">Netflix-clone</div>
+                    <div class="iGKVuq">2024</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                        <div class="dgnxrK">React</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        Our Netflix-clone project utilizes HTML, CSS, and React to create a dynamic and 
+                        user-friendly streaming platform, With a responsive design and seamless navigation.
+                        users can enjoy watching a trailer with smooth playback functionality.
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="" class="GZmoK">View Code</a>
+                        <a href="" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="css-8ndowl modal fade" id="myModal-2"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/Flaskmarket.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">Flaskmarket-WebApp</div>
+                    <div class="iGKVuq">2024</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                        <div class="dgnxrK">Python</div>
+                        <div class="dgnxrK">Flask</div>
+                        <div class="dgnxrK">Sqlite</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        This Flask web application includes essential user functionalities such as registration
+                        and login, allowing users to securely buy and sell items. It ensures security by saving
+                        passwords in the database as encrypted text. This is achieved using hashing algorithms,
+                        such as bcript, to encrypt passwords before storing them, provinding robust protection
+                        against unauthorized access.
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="" class="GZmoK">View Code</a>
+                        <a href="" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="css-8ndowl modal fade" id="myModal-3"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/note-keeper.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">Note-Keeper</div>
+                    <div class="iGKVuq">2023</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                        <div class="dgnxrK">JavaScript</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        The Note Keeper project leverages HTML, CSS, and JavaScript to create an intuitive
+                        web application for managing and organizing notes. Users can easily create, edit,
+                        and delete notes, with a clear and user-friendly interface designed for seamless
+                        interaction and efficient organization.
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="https://github.com/Mugilan010/My-Note-Keeper" class="GZmoK">View Code</a>
+                        <a href="https://my-notes-keeper-clone-app.netlify.app/" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="css-8ndowl modal fade" id="myModal-4"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/Meme_generator.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">Meme_generator</div>
+                    <div class="iGKVuq">2023</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                        <div class="dgnxrK">React</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        A simple and fun meme generator build with React that fetches random images from
+                        an API. Users can add their own text to create and sharp unique memes. The application
+                        uses React hooks for state management and fetches images from an external API to ensure
+                        fresh diverse content.
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="https://github.com/Mugilan010/React_Meme_Generator" class="GZmoK">View Code</a>
+                        <a href="https://my-react-meme-generator.netlify.app/" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="css-8ndowl modal fade" id="myModal-5"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/newsgrid.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">NewsGrid</div>
+                    <div class="iGKVuq">2023</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        NewsGrid is a responsive news blog article layout I created as a beginner frontend developer.
+                        This project features a visually appealing grid layout for news articles, 
+                        complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. 
+                        The project's responsiveness guarantees it looks great on various devices, 
+                        and it serves as a testament to my HTML and CSS skills in creating user-friendly, 
+                        grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. 
+                        You can check out the live project here
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="" class="GZmoK">View Code</a>
+                        <a href="" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="css-8ndowl modal fade" id="myModal-6"
+    tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="css-919eu4" >
+            <div class="modal-dialog iKvBgK " >
+                <div class=" modal-content ARcNH">
+                    <svg class="css-vubbuv" data-dismiss="modal" aria-label="Close">
+                        <path d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4"></path>
+                    </svg>
+                    <img src="./Images/product-landing-page.png" alt="" class="idhUWA">
+                    <div class="dUldRZ modal-header">Product_landing_page</div>
+                    <div class="iGKVuq">2022</div>
+                    <div class="bGUtes">
+                        <div class="dgnxrK">HTML</div>
+                        <div class="dgnxrK">CSS</div>
+                    </div>
+                    <div class="bJALem modal-body">
+                        A sleek and modern product landing page crafted using HTML and CSS. The page is 
+                        designed to showcase products effectively, ensuring a seamless user experience
+                        across all devices.Well-organized and semantic HTML5 code for easy readability
+                        and maintainability.Custom CSS for visually appealing design, including smooth
+                        animations, hover effects, and consistent typography.
+                    </div>
+                    <div class="bcEbCj modal-footer">
+                        <a href="https://github.com/Mugilan010/product-landing-webpage" class="GZmoK">View Code</a>
+                        <a href="https://my-products-landing-page.netlify.app/" class="hsrYZy">View Live APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
+    <!-- Bootstrap js dependencies -->
+
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
