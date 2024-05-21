@@ -5,6 +5,7 @@
     padding: 0;
     list-style:none;
     font-family: 'Poppins', sans-serif;
+    max-width: 100vw;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw;
     z-index: 10;
     background-color: #f8eeee;
@@ -727,12 +729,11 @@ li a:hover{
 }
 
 .klxVPD {
-    width: 100%;
-    max-width: 50em;
+    width: 50%;
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
     -webkit-box-pack: center;
     justify-content: center;
 }
@@ -740,7 +741,7 @@ li a:hover{
 .dWbgwL {
     color: rgb(242, 243, 244);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.2s ease-in-out 0s;
 }
 
@@ -895,7 +896,7 @@ li a:hover{
 }
 
 .bJALem {
-    font-size: 1em;
+    font-size: .7em;
     font-weight: 400;
     color: rgb(242, 243, 244);
     margin: 0.5em 0.38em;
@@ -911,7 +912,6 @@ li a:hover{
 
 .GZmoK {
     
-    width:45%;
     text-align: center;
     font-size: 1em;
     font-weight: 600;
@@ -925,7 +925,7 @@ li a:hover{
 }
 
 .hsrYZy {
-    width: 45%;
+    
     text-align: center;
     font-size: 1em;
     font-weight: 600;
