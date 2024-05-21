@@ -76,6 +76,18 @@ body{
 }
 
 
+.checkbtn-1{
+    display: none;
+}
+
+.checkbtn-2{
+    display: none;
+}
+
+#check-1 {
+    display: none;
+}
+
 /* About section */
 
 .home{
