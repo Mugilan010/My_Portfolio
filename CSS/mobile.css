@@ -178,11 +178,11 @@ li a:hover{
     justify-content: center;
     align-items: center;
     width: 12.5em;
-    height: 3.12em;
+    height: 4em;
     background:transparent;;
     border: 2px solid #00abf0;
     border-radius: 3.12em;
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 900;
     color: #00abf0;
     text-decoration: none;
